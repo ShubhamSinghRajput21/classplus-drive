@@ -1,0 +1,6 @@
+.infiniteScroll {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  list-style-type: none;
+}
