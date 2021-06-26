@@ -12,8 +12,10 @@ function App() {
   const [hasMore,sethasMore] = useState(true);
   const [searchQuery,setsearchQuery] = useState('');
 
+//Each time the value of page or search query changes the useEffect is triggered and the functions 
+// for Api calls are called based on the conditions.
   useEffect(()=>{
-    CallGetRecentPhotos(currentPage);
+    CallGetRecentPhotos(currentPage); 
   },[currentPage,searchQuery]);
 
   async function CallGetRecentPhotos(page){
